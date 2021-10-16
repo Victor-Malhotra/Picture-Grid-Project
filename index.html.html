@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+        * {
+            font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+            font-weight: bolder;
+        }
+        
+        .container {
+            text-align: center;
+            width: 100%;
+            height: 100%;
+            margin: 5px 5px 5px 5px;
+            padding: 5px 5px 5px 5px;
+            width: 90rem;
+            display: grid;
+            grid-template-columns: 300px 500px 400px 10px;
+            grid-template-rows: 1fr 1fr 1fr;
+            grid-template-areas: "picture name hobbies . " "picture date fightingStyle . " " picture currentData . .";
+            border: 3px solid blue;
+            border-radius: 10px;
+            box-shadow: 10px 10px 8px black;
+        }
+        
+        .picture {
+            text-align: center;
+            grid-area: picture;
+            border: 2px solid black;
+            width: 100%;
+            height: 300px;
+        }
+        
+        .name {
+            grid-area: name;
+        }
+        
+        .date {
+            grid-area: date;
+        }
+        
+        .currentData {
+            grid-area: currentData;
+        }
+        
+        .hobbies {
+            grid-area: hobbies;
+            border: 3px solid black;
+        }
+        
+        .fightingStyle {
+            grid-area: fightingStyle;
+            border: 3px solid black;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="picture grid-area">
+            <img class="picture grid-area" src="../images/tanjiro.png" />
+        </div>
+        <div class="name grid-area">
+            <h1>Name: <strong>Tanjiro Kamado</strong></h1>
+        </div>
+        <br />
+        <br />
+        <div class="date grid-area">
+            <h3>
+                <script>
+                    document.write(new Date().toLocaleDateString());
+                </script>
+                -
+                <script>
+                    document.write(new Date().toDateString());
+                </script>
+            </h3>
+        </div>
+
+        <div class="currentData grid-area">
+            <strong style="font-weight: bolder; font-size: large">Height</strong>: 5'5" <br /><strong style="font-weight: bolder; font-size: large">Age</strong
+        >: 15
+      </div>
+      <div class="hobbies grid-area">
+        <h1>Hobbies:</h1>
+        Hanging out with his friends and writing in his journal.
+      </div>
+      <br />
+      <div class="fightingStyle grid area">
+        <br />
+        <h1>Fighting Style:</h1>
+        Tanjiro fights with a blade using his water breathing style and his sun
+        breathing style
+      </div>
+    </div>
+  </body>
+</html>
