@@ -4,99 +4,274 @@
 <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=80%" />
     <title>Document</title>
     <style>
         * {
-            font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
-            font-weight: bolder;
+            box-sizing: border-box;
+        }
+        
+        .body {
+            border: 10px solid grey;
         }
         
         .container {
-            text-align: center;
+            display: grid;
+            grid-row: 1fr;
+            grid-column: 0.5fr 0.5fr auto 2fr;
+            grid-template-areas: "navbar navbar navbar navbar navbar" "logo logo logo logo img1" "logo logo logo logo img2" "logo logo logo logo img3" "img4 img4 img5 img6 img7" "img8 img9 img9 img10 img11" "img8 img13 img14 img14 img15 " "img12 img13 img16 img17 img18" "img19 img20 img20 copyright copyright";
+            grid-gap: 2px;
             width: 100%;
             height: 100%;
-            margin: 5px 5px 5px 5px;
-            padding: 5px 5px 5px 5px;
-            width: 90rem;
-            display: grid;
-            grid-template-columns: 300px 500px 400px 10px;
-            grid-template-rows: 1fr 1fr 1fr;
-            grid-template-areas: "picture name hobbies . " "picture date fightingStyle . " " picture currentData . .";
-            border: 3px solid blue;
-            border-radius: 10px;
-            box-shadow: 10px 10px 8px black;
         }
         
-        .picture {
-            text-align: center;
-            grid-area: picture;
-            border: 2px solid black;
+        .navbar {
+            grid-area: navbar;
+            background-color: #856058;
             width: 100%;
-            height: 300px;
+            height: 100%;
         }
         
-        .name {
-            grid-area: name;
+        .logo {
+            grid-area: logo;
+            width: 100%;
+            height: 100%;
         }
         
-        .date {
-            grid-area: date;
+        .img1 {
+            grid-area: img1;
+            width: 100%;
+            height: 100%;
         }
         
-        .currentData {
-            grid-area: currentData;
+        .img2 {
+            grid-area: img2;
+            width: 100%;
+            height: 100%;
         }
         
-        .hobbies {
-            grid-area: hobbies;
-            border: 3px solid black;
+        .img3 {
+            grid-area: img3;
+            width: 100%;
+            height: 100%;
         }
         
-        .fightingStyle {
-            grid-area: fightingStyle;
-            border: 3px solid black;
+        .img4 {
+            grid-area: img4;
+            width: 100%;
+            height: 100%;
+        }
+        
+        .img5 {
+            grid-area: img5;
+            width: 100%;
+            height: 100%;
+        }
+        
+        .img6 {
+            grid-area: img6;
+            width: 100%;
+            height: 100%;
+        }
+        
+        .img7 {
+            grid-area: img7;
+            width: 100%;
+            height: 100%;
+        }
+        
+        .img8 {
+            grid-area: img8;
+            width: 100%;
+            height: 100%;
+        }
+        
+        .img9 {
+            grid-area: img9;
+            width: 100%;
+            height: 100%;
+        }
+        
+        .img10 {
+            grid-area: img10;
+            width: 100%;
+            height: 100%;
+        }
+        
+        .img11 {
+            grid-area: img11;
+            width: 100%;
+            height: 100%;
+        }
+        
+        .img12 {
+            grid-area: img12;
+            width: 100%;
+            width: 100%;
+            height: 100%;
+        }
+        
+        .img13 {
+            grid-area: img13;
+            width: 100%;
+            height: 100%;
+        }
+        
+        .img14 {
+            grid-area: img14;
+            width: 100%;
+            height: 100%;
+        }
+        
+        .img15 {
+            grid-area: img15;
+            width: 100%;
+            height: 100%;
+        }
+        
+        .img16 {
+            grid-area: img16;
+            width: 100%;
+            height: 100%;
+        }
+        
+        .img17 {
+            grid-area: img17;
+            width: 100%;
+            height: 100%;
+        }
+        
+        .img18 {
+            grid-area: img18;
+            width: 100%;
+            height: 100%;
+        }
+        
+        .img19 {
+            grid-area: img19;
+            width: 100%;
+            height: 100%;
+        }
+        
+        .img20 {
+            grid-area: img20;
+            width: 100%;
+            height: 100%;
+        }
+        
+        .copyright {
+            grid-area: copyright;
+            display: flex;
+            justify-content: flex-end;
+            align-items: flex-end;
+            font-size: small;
+            padding: 1.6px 1.6px 1.6px 1.6px;
+            color: #613405;
+            width: 100%;
+            height: 100%;
+            font-weight: bold;
+        }
+        
+        .navbar li {
+            float: left;
+            text-align: center;
+            padding: 4px;
+            font-size: 0.7rem;
+            font-weight: bold;
+            color: rgb(143, 134, 134);
         }
     </style>
 </head>
 
 <body>
-    <div class="container">
-        <div class="picture grid-area">
-            <img class="picture grid-area" src="../images/tanjiro.png" />
+    <div class="body">
+        <div class="container">
+            <div class="navbar grid-area">
+                <strong>
+            <ul style="display: inline; list-style: none">
+              <li>Enter Site</li>
+              <li>My Account</li>
+              <li>Track Orders</li>
+              <li>Contact Info</li>
+            </ul>
+          </strong>
+            </div>
+            <div class="logo grid-area">
+                <img class="logo grid-area" src="Images/_Project Images (2)/ce_logo.png" />
+            </div>
+            <div class="img1 grid-area">
+                <img class="img1 grid-area" src="images/_Project Images (2)/ce_image01.png" />
+            </div>
+            <div class="img2 grid-area">
+                <img class="img2 grid-area" src="images/_Project Images (2)/ce_image02.png" />
+            </div>
+            <div class="img3 grid-area">
+                <img class="img3 grid-area" src="images/_Project Images (2)/ce_image03.png" />
+            </div>
+            <div class="img4 grid-area">
+                <img class="img4 grid-area" src="images/_Project Images (2)/ce_image04.png" />
+            </div>
+            <div class="img5 grid-area">
+                <img class="img5 grid-area" src="images/_Project Images (2)/ce_image05.png" />
+            </div>
+            <div class="img6 grid-area">
+                <img class="img6 grid-area" src="images/_Project Images (2)/ce_image06.png" />
+            </div>
+            <div class="img7 grid-area">
+                <img class="img7 grid-area" src="images/_Project Images (2)/ce_image07.png" />
+            </div>
+            <div class="img8 grid-area">
+                <img class="img8 grid-area" src="images/_Project Images (2)/ce_image08.png" />
+            </div>
+            <div class="img9 grid-area">
+                <img class="img9 grid-area" src="images/_Project Images (2)/ce_image09.png" />
+            </div>
+            <div class="img10 grid-area">
+                <img class="img10 grid-area" src="images/_Project Images (2)/ce_image10.png" />
+            </div>
+            <div class="img11 grid-area">
+                <img class="img11 grid-area" src="images/_Project Images (2)/ce_image11.png" />
+            </div>
+            <div class="img12 grid-area">
+                <img class="img12 grid-area" src="images/_Project Images (2)/ce_image12.png" />
+            </div>
+            <div class="img13 grid-area">
+                <img class="img13 grid-area" src="images/_Project Images (2)/ce_image13.png" />
+            </div>
+            <div class="img14 grid-area">
+                <img class="img14 grid-area" src="images/_Project Images (2)/ce_image14.png" />
+            </div>
+            <div class="img15 grid-area">
+                <img class="img15 grid-area" src="images/_Project Images (2)/ce_image15.png" />
+            </div>
+            <div class="img16 grid-area">
+                <img class="img16 grid-area" src="images/_Project Images (2)/ce_image16.png" />
+            </div>
+            <div class="img17 grid-area">
+                <img class="img17 grid-area" src="images/_Project Images (2)/ce_image17.png" />
+            </div>
+            <div class="img18 grid-area">
+                <img class="img18 grid-area" src="images/_Project Images (2)/ce_image18.png" />
+            </div>
+            <div class="img19 grid-area">
+                <img class="img19 grid-area" src="images/_Project Images (2)/ce_image19.png" />
+            </div>
+            <div class="img20 grid-area">
+                <img class="img20 grid-area" src="images/_Project Images (2)/ce_image20.png" />
+            </div>
+            <div class="copyright grid-area" style="
+            display: flex;
+            justify-content: flex-end;
+            align-items: flex-end;
+            font-size: small;
+            padding: 1.6px 1.6px 1.6px 1.6px;
+            color: #613405;
+          ">
+                Costume Expressions
+                <br /> 3411 Torrence Dr. <br /> Rockville, MD 20850
+            </div>
         </div>
-        <div class="name grid-area">
-            <h1>Name: <strong>Tanjiro Kamado</strong></h1>
-        </div>
-        <br />
-        <br />
-        <div class="date grid-area">
-            <h3>
-                <script>
-                    document.write(new Date().toLocaleDateString());
-                </script>
-                -
-                <script>
-                    document.write(new Date().toDateString());
-                </script>
-            </h3>
-        </div>
-
-        <div class="currentData grid-area">
-            <strong style="font-weight: bolder; font-size: large">Height</strong>: 5'5" <br /><strong style="font-weight: bolder; font-size: large">Age</strong
-        >: 15
-      </div>
-      <div class="hobbies grid-area">
-        <h1>Hobbies:</h1>
-        Hanging out with his friends and writing in his journal.
-      </div>
-      <br />
-      <div class="fightingStyle grid area">
-        <br />
-        <h1>Fighting Style:</h1>
-        Tanjiro fights with a blade using his water breathing style and his sun
-        breathing style
-      </div>
     </div>
-  </body>
+</body>
+
 </html>
